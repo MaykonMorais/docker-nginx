@@ -28,10 +28,10 @@ docker run --name backend -d -p 5000:5000 --network mynetwork app-backend
 
 ```bash
 # Build the frontend image
-sudo docker build -t app-frontend -f Dockerfile.frontend  .
+docker build -t app-frontend -f Dockerfile.frontend  .
 
 # Run the frontend container
-sudo docker run --name frontend -d -p 3000:80 --network mynetwork app-frontend
+docker run --name frontend -d -p 3000:80 --network mynetwork app-frontend
 ```
 
 ## License
